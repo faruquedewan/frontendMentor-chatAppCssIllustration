@@ -47,7 +47,7 @@ main {
 }
 
 .div-phone {
-    /* margin: auto; */
+    margin: auto;
     padding: .75rem;
     max-width: 267px;
     min-width: 263px;
