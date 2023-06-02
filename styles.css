@@ -1,0 +1,328 @@
+:root {
+    /* Primary */
+    /* Text */
+    --paleViolet: hsl(276, 100%, 81%);
+    --moderateViolet: hsl(276, 55%, 52%);
+    --desaturatedDarkViolet: hsl(271, 15%, 43%);
+    --grayishBlue: hsl(206, 6%, 79%);
+    --veryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+    --darkGrayishViolet: hsl(270, 7%, 64%);
+    /* Gradients */
+    --lightMagenta: hsl(293, 100%, 63%);
+    --lightViolet: hsl(264, 100%, 61%);
+    /* Secondary */
+    --white: hsl(0, 0%, 100%);
+    --lightGrayishViolet: hsl(270, 20%, 96%);
+    --veryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+    --veryLightMagenta: hsl(289, 100%, 72%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    background-color: var(--lightGrayishViolet);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Section Phone */
+.section-phone {
+    padding: 4rem 3.5rem;
+}
+
+.div-phone {
+    margin: auto;
+    max-width: 267px;
+    min-width: 263px;
+    box-shadow: 10px 10px 45px -25px var(--darkGrayishViolet);
+    padding: .75rem;
+    border-radius: 35px;
+    background-color: var(--white);
+}
+
+.div-screen {
+    border-radius: 25px;
+    background-color: var(--lightGrayishViolet);
+    position: relative;
+}
+
+.div-screen::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1.25rem;
+    border-radius: 0 0 15px 15px;
+    background-color: var(--white);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.div-screen-top {
+    background: linear-gradient(to right, var(--lightViolet), var(--lightMagenta));
+    border-radius: 25px 25px 5px 5px;
+    color: var(--white);
+    padding-inline: 1rem;
+    padding-block: 2rem .75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 10px -7px var(--darkGrayishViolet);
+}
+
+.div-screen-top-left {
+    display: flex;
+    gap: .6rem;
+    align-items: center;
+    justify-content: start;
+}
+
+.div-screen-top span {
+    display: flex;
+    align-items: center;
+}
+
+.div-screen-top img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    border: solid 1px var(--white);
+}
+
+.div-screen-top-left > div {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: .15rem;
+}
+
+h2 {
+    font-size: .7rem;
+    font-weight: 400;
+}
+
+h3 {
+    color: var(--paleViolet);
+    font-size: .5rem;
+    font-weight: 400;
+}
+
+/*  */
+.div-screen-bottom {
+    padding: .75rem .75rem 0 .75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-screen-bottom > div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-block-end: 1rem;
+}
+
+.message {
+    font-size: .5rem;
+    padding: .5rem;
+    line-height: .75rem;
+    text-align: left;
+    width: 60%;
+}
+
+.message-left {
+    color: var(--moderateViolet);
+    background-color: hsl(271, 100%, 93%);
+    border-radius: 10px 10px 10px 5px;
+}
+
+.message-right {
+    color: var(--desaturatedDarkViolet);
+    background-color: var(--white);
+    border-radius: 10px 10px 5px 10px;
+    box-shadow: 1px 1px 10px -6px var(--darkGrayishViolet);
+}
+
+.div-screen-bottom > div:nth-child(2) {
+    align-items: end;
+}
+
+.div-images {
+    display: flex;
+    gap: .5rem;
+}
+
+.div-images img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.message-right:nth-of-type(3) {
+    width: max-content;
+}
+
+.message-money {
+    color: var(--white);
+    background: linear-gradient(to left, var(--lightViolet), var(--lightMagenta));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    padding-inline-end: 1rem;
+    border-radius: 10px 10px 10px 5px;
+    font-size: .5rem;
+    font-weight: 400;
+    width: 75%;
+}
+
+.message-money div {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+h4 {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.message-send {
+    background-color: var(--white);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--grayishBlue);
+    font-size: .6rem;
+    font-weight: 400;
+    padding: .3rem .3rem .3rem 1rem;
+    margin-top: .5rem;
+}
+
+.message-send > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--veryDarkDesaturatedViolet);
+    width: 22px;
+    height: 22px;
+    border-radius: 50px;
+    color: var(--white);
+}
+
+.last {
+    margin-block-end: .75rem !important;
+}
+
+/* Section Text */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--veryDarkDesaturatedViolet);
+}
+
+.section-text p {
+    margin-block: 1.75rem 4rem;
+    padding-inline: 2rem;
+    line-height: 1.75rem;
+    color: var(--darkGrayishViolet);
+}
+
+/* Background Design */
+main::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 550px;
+    background: #9c00ff;
+    border-radius: 0 0 250px 250px;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+main::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 550px;
+    background: hsl(206, 6%, 94%);
+    border-radius: 250px 250px 0 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(50%);
+    z-index: -1;
+}
+
+/* Footer  */
+footer { 
+    font-size: 11px; 
+    text-align: center; 
+}
+footer a { 
+    text-decoration: none;
+    color: var(--lightMagenta); 
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        text-align: left;
+        padding-inline: 15rem;
+        min-height: 100vh;
+    }
+
+    p {
+        padding-inline: 0 !important;
+    }
+
+    main::before {
+        width: 450px;
+        height: 625px;
+        transform: translateX(-20%);
+    }
+    
+    main::after {
+        width: 450px;
+        height: 625px;
+        transform: translateX(35%);
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    main {
+        padding-inline: 17rem;
+    }
+
+    main::before {
+        width: 450px;
+        height: 725px;
+        transform: translateX(-20%);
+    }
+    
+    main::after {
+        width: 450px;
+        height: 725px;
+        transform: translateX(30%);
+    }
+}
