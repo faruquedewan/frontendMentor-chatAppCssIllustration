@@ -43,7 +43,8 @@ main {
 
 /* Section Phone */
 .section-phone {
-    padding: 4rem 3.5rem;
+    /* padding: 4rem 3.5rem; */
+    padding-block: 4rem;
 }
 
 .div-phone {
